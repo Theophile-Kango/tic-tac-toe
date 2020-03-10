@@ -43,7 +43,8 @@ def mark_cell(position, board, player)
     while i < board.length
       j = 0
       while j < board.length
-        mark(board, i, j, position, player) ? break : j+=1
+        mark(board, i, j, position, player)
+        j += 1
       end
       i += 1
     end
@@ -54,8 +55,7 @@ end
 def play(player, board)
   puts puts "#{player.name}, please choose a number on the board"
   choice = gets.chomp
-  res = true
-  result = mark_cell(choice.to_i, board, player)
+  mark_cell(choice.to_i, board, player)
 end
 
 def filled_board(arr)
@@ -69,11 +69,9 @@ end
 def start(board, player1, player2)
   current_player = player1
   prev_player = player2
-  while !filled_board(board)
+  until filled_board(board)
     result = play(current_player, board)
-    while !result
-      result = play(current_player, board)
-    end
+    result = play(current_player, board) until result
     display_board(board)
     current_player, prev_player = prev_player, current_player
   end
