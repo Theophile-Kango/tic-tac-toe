@@ -43,7 +43,11 @@ def mark_cell(position, board, player)
     while i < board.length
       j = 0
       while j < board.length
-        mark(board, i, j, position, player) ? break : j+=1
+         if board[index][sub_index] == position
+    board[index][sub_index] = player.sign
+    marked = true
+  end
+        j += 1
       end
       i += 1
     end
