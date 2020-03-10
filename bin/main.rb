@@ -1,2 +1,2 @@
-#!/home/manezeu/.rbenv/shims/ruby
+#!/usr/bin/env ruby
 puts 'hello world!'
