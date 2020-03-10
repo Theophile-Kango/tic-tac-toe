@@ -1,4 +1,4 @@
-#!/home/manezeu/.rbenv/shims/ruby
+#!/usr/bin/env ruby
 class Player
   attr_accessor :name, :sign
   def initialize(name, sign)
