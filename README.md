@@ -1,11 +1,8 @@
-# Advance building blocks in Ruby
+# Tic tac toe game in Ruby
 
-> Bubble Sorting
+> Tic tac toe game implementation in RUby
 
-Bubble sorting algorithms in Ruby. The solution is given with three methods:
-- double loop (bubble_sort.rb)
-- recursion (bubble_sort_plus.rb)
-- usage of ruby redo function (bubble_sort_redo.rb)
+Command line version of Tic tac toe for two players implemented in Ruby using POO.
 
 ## Built With
 
@@ -40,13 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
-- add code lines to bubble_sort.rb file
-   * `p bubble_sort([4, 3, 78, 2, 0, 2])` (sort in ascending order)
-   * `p bubble_sort(["hi","hello","hey"])` (sort in alphabetic order)
-   * `p bubble_sort_by([4, 3, 78, 2, 0, 2]) { |first, second| first <=> second }` (sort in ascending order)
-   * `p bubble_sort_by(["hi","hello","hey"]) { |first, second| first <=> second }` (sort in alphabetic order)
-   * `p bubble_sort_by(["hi","hello","hey"]) { |first, second| first.length - second.length }`(sort in ascending string length order)
-- run the file using "ruby filename" command
+- Go to command line and type `bin/main.rb`
 
 
 ## Authors
@@ -67,7 +58,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Theophile-Kango/tic-tac-toe/issues).
 
 ## Show your support
 
