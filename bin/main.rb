@@ -1,9 +1,39 @@
 #!/usr/bin/env ruby
+require '../lib/board.rb'
+require '../lib/game.rb'
+require '../lib/player.rb'
 
 
 def get_name(rank)
   puts "Player #{rank} type your name please"
   gets.chomp
+end
+
+player1 = Player.new(get_name(1), 'X')
+
+player2 = Player.new(get_name(2), 'O')
+
+game = Game.new(player1, player2)
+
+game.board.display_board{|i| print " #{i} |"}
+
+def start(game)
+    current_player = game.player1
+    prev_player = game.player2
+    until game.board.filled_board
+        puts puts "#{player.name}, please choose a number on the board"
+        choice = gets.chomp
+        result = game.play(choice.to_i, current_player)
+        result = game.play(choice.to_i, current_player) until result
+        game.board.display_board
+        winner = game.win?
+        if winner
+            puts "Game over, the winner is #{winner.name}"
+            break
+        else
+            current_player, prev_player = prev_player, current_player
+        end
+    end
 end
 
 def display_board(arr)

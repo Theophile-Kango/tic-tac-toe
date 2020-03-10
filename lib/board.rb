@@ -1,7 +1,8 @@
 class Board
-    attr_accessor :arr
+    attr_reader :arr, :win_comb
     def initialize
         @arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        @win_comb = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
     end
 
     def filled_board
@@ -32,6 +33,12 @@ class Board
         @arr.each do |elt|
             elt.each { |i| yield(i) }
         end
+    end
+
+    def win_comb?(choices)
+        res = false
+        @win_comb.each {|arr| res = true if arr == choices} 
+        res
     end
 
     private
