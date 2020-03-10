@@ -1,11 +1,5 @@
 #!/usr/bin/env ruby
-class Player
-  attr_accessor :name, :sign
-  def initialize(name, sign)
-    @name = name
-    @sign = sign
-  end
-end
+
 
 def get_name(rank)
   puts "Player #{rank} type your name please"
