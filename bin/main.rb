@@ -13,7 +13,7 @@ while repeat
   player2 = Player.new(Helper.get_name(2), 'O')
 
   game = Game.new(player1, player2)
-  
+
   game.board.display_board
 
   game.start
