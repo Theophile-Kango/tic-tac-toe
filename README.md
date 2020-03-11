@@ -34,7 +34,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone the repository on your local machine
-- cd into the folder, find the ibubble_sort.rb file an open it in code editor
+- cd into the folder
+- run bin/main.rb
 
 ### Install
 
