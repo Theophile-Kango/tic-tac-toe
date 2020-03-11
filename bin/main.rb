@@ -53,7 +53,7 @@ def mark_cell(position, board, player)
 end
 
 def play(player, board)
-  puts puts "#{player.name}, please choose a number on the board"
+  puts "#{player.name}, please choose a number on the board"
   choice = gets.chomp
   mark_cell(choice.to_i, board, player)
 end
