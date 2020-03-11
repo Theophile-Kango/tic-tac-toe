@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 class Player
   attr_accessor :name, :sign
   def initialize(name, sign)
@@ -86,3 +87,4 @@ player2 = Player.new(get_name(2), 'O')
 display_board(board)
 
 start(board, player1, player2)
+
