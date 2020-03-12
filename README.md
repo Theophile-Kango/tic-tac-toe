@@ -4,6 +4,15 @@
 
 Command line version of Tic tac toe for two players implemented in Ruby using POO.
 
+## Game Instructions
+
+Welcome to Tic-tac-toe game interface buddies!!! Keep the rules in mind and have fun!!
+Just in case you forgot, the rules are simple:
+- Choose only numbers that are available on the board when it's your turn
+- The first player got the 'X' symbol and the second an 'O'
+- The winner is the first one the have a three consecutive symbols, vertically, horizontally or cross side
+- Do not cheat and wait your turn ;-)
+
 ## Built With
 
 - Ruby
@@ -25,7 +34,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone the repository on your local machine
-- cd into the folder, find the ibubble_sort.rb file an open it in code editor
+- cd into the folder
+- run bin/main.rb
 
 ### Install
 
